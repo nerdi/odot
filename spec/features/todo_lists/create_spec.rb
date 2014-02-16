@@ -11,7 +11,6 @@ def create_todo_list(options={})
 		fill_in "Title", with:options[:title]
 		fill_in "Description", with:options[:description]
 		click_button "Create Todo list"
-
 end
 
 	it "redirects to the todo list index page on success" do
