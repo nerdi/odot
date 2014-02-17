@@ -37,6 +37,7 @@ group :development, :test do
 end
 group :test do
 	gem 'capybara'
+	gem 'shoulda-matchers', '~> 2.5.0'
 end
 
 
