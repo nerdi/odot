@@ -1,9 +1,10 @@
 require 'spec_helper'
 
 describe "Creating todo lists" do
+
 def create_todo_list(options={})
 	options[:title] ||= "My todo list"
-	options[:description] ||= "This is my toto list."
+	options[:description] ||= "This is my todo list."
 	visit "/todo_lists"
 		click_link "New Todo list"
 		expect(page).to have_content("New todo_list")
